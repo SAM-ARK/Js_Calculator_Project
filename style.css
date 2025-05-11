@@ -1,83 +1,77 @@
-body{
+*{
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 28, 28);
     display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
     height: 100vh;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-#clearbtn{
-    width: 200px;
-    height: 100px;
-    border-radius: 50px;
+.calculator-container{
+    margin: auto;
+    width: 600px;
+    height: 700px;
+    background-color: rgb(70, 67, 67);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.display{
+    width: 100%;
+    height:100px;
+    background-color: rgb(154, 149, 149);
     border: none;
-    background-color: rgb(17, 39, 85);
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    color: rgb(60, 58, 58);
+    font-weight: 600;
 }
-#cleatbtn:hover{
-    background-color: darkcyan;
-}
-#clearbtn:active{
-    background-color: darkcyan;
-    transform: scale(0.95);
-}
-
-button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: darkcyan;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-button:hover {
-    background-color: rgb(17, 39, 85);
-}
-button:active {
-    background-color: rgb(17, 39, 85);
-    transform: scale(0.95);
-}
-
-#keys {
+.keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin: 25px;
-    padding: 25px;
-    background-color: lightgray;
-
+    padding: 10px;
+    background-color: rgb(70, 67, 67);
 }
 
-#calculator {
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: rgb(31, 38, 41);
-    overflow: hidden;
-}
-
-#display {
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    border-radius: 10px;
+button {
+    background-color: rgb(154, 149, 149);
     border: none;
-    background-color: lightgray;
-    color: black;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 10px;
+    color: whitesmoke;
+    border-radius: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    height: 100px;
 }
 
+button:hover{
+    background-color: rgb(20, 10, 10);
+    cursor: pointer;
+    color: smokewhite;
+    font-weight: 600;
+}
+.operator-btn{
+    background-color: rgb(99, 64, 60);
+}
+
+.btn{
+    background-color: slateblue;
+}
+
+.equal-btn{
+    background-color: seagreen;
+}
+
+.equal-btn:hover{
+    background-color: rgb(0, 128, 0);
+}
